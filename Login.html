@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Account · The Diner Cafe</title><meta name="description" content="Sign in or create an account at The Diner Cafe.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="top"><div class="wrap bar"><a class="logo" href="index.html"><img src="images/logo.png" alt="The Diner Cafe"></a>
+<button class="burger" aria-controls="nav" aria-expanded="false">Menu</button>
+<nav id="nav" aria-label="Main"><a href="index.html">Home</a><a href="About%20us.html">About us</a><a href="Our%20service.html">Our services</a><a href="Gallery.html">Gallery</a><a href="Contact%20Us.html">Contact us</a><a class="signin" href="Login.html" aria-current=page>Sign in</a></nav></div></header>
+<main><div class="auth"><h1 style="font-size:2.4rem;margin-bottom:18px">Your account</h1>
+<div class="tabs" role="tablist"><button role="tab" data-tab="signin" aria-selected="true">Sign in</button><button role="tab" data-tab="register" aria-selected="false">Create account</button></div>
+<div class="panel" id="signin"><form data-kind="login" action="PHP/login_data.php" method="post" novalidate>
+<div class="field"><label for="username_para">User name <em>*</em></label><input id="username_para" name="username_para" autocomplete="username" data-msg="Enter your user name." required><span class="err" role="alert"></span></div>
+<div class="field"><label for="password_para">Password <em>*</em></label><div class="pw"><input id="password_para" name="password_para" type="password" placeholder="Your password" data-msg="Enter your password." required autocomplete="current-password"><button class="reveal" type="button" aria-pressed="false">Show</button></div><span class="err" role="alert"></span></div>
+<button class="btn" type="submit" style="width:100%">Sign in</button><div class="status" role="status"></div></form></div>
+<div class="panel" id="register" hidden><div><form data-kind="register" action="PHP/register_data.php" method="post" novalidate>
+<div class="field"><label for="UserName">User name <em>*</em></label><input id="UserName" name="UserName" type="text" placeholder="Choose a user name" data-msg="Enter a user name (3 to 20 characters)." required minlength="3" maxlength="20" autocomplete="username"><span class="err" role="alert"></span></div>
+<div class="field"><label for="Email">Email <em>*</em></label><input id="Email" name="Email" type="email" placeholder="you@example.com" data-msg="Enter a valid email address." required autocomplete="email"><span class="err" role="alert"></span></div>
+<div class="field"><label for="Passwordbox">Password <em>*</em></label><div class="pw"><input id="Passwordbox" name="Passwordbox" type="password" placeholder="At least 6 characters" data-msg="Use at least 6 characters." required minlength="6" autocomplete="new-password"><button class="reveal" type="button" aria-pressed="false">Show</button></div><span class="err" role="alert"></span></div>
+<div class="field"><label for="MobileNo">Mobile number <em>*</em></label><input id="MobileNo" name="MobileNo" type="tel" placeholder="07X XXX XXXX" data-msg="Enter a mobile number, digits only (9 to 12)." required pattern="\+?[0-9 ]{9,15}" inputmode="tel" autocomplete="tel"><span class="err" role="alert"></span></div>
+<div class="two"><div class="field"><label for="DateofBirth">Date of birth <em>*</em></label><input id="DateofBirth" name="DateofBirth" type="date" placeholder="" data-msg="Choose your date of birth." required max="2026-11-01"><span class="err" role="alert"></span></div>
+<div class="field"><label for="Gender">Gender <em>*</em></label><select id="Gender" name="Gender" data-msg="Choose an option." required><option value="">Select</option><option>Male</option><option>Female</option><option>Prefer not to say</option></select><span class="err" role="alert"></span></div></div>
+<div class="field"><label for="Address">Address <em>*</em></label><input id="Address" name="Address" type="text" placeholder="Street, city" data-msg="Enter your address." required autocomplete="street-address"><span class="err" role="alert"></span></div>
+<div class="actions"><button class="btn" type="submit">Create account</button><button class="btn ghost" type="reset" style="color:var(--ink)">Reset</button></div>
+<div class="status" role="status"></div></form>
+<div class="done" hidden><h2>Account created</h2><p>You can now <a href="#signin" onclick="document.querySelector('[data-tab=signin]').click()">sign in</a>.</p></div></div></div></div></main>
+<div class="check" aria-hidden="true"></div>
+<footer><div class="wrap"><div class="fgrid">
+<div><img class="fl" src="images/logo.png" alt="The Diner Cafe"><p>Authentic Sri Lankan dining in Colombo, since 1994.</p></div>
+<div><h3>Find us</h3><p>Liberty Arcade, No. 282,<br>R A De Mel Mawatha,<br>Colombo 03<br><br>Restaurant: +94 114716171 / +94 1125770978<br>Fax: +94 114621130<br><a href="mailto:thedinercafe@gmail.com">thedinercafe@gmail.com</a></p></div>
+<div><h3>Follow us</h3><div class="soc"><a href="#" aria-label="Facebook"><img src="images/facebook.png" alt=""></a><a href="#" aria-label="Instagram"><img src="images/instagram.png" alt=""></a><a href="#" aria-label="Twitter"><img src="images/twitter.png" alt=""></a></div></div>
+</div><p class="copy">© 2026 The Diner Cafe. All rights reserved.</p></div></footer>
+<script src="js/main.js"></script></body></html>

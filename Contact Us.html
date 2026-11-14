@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact us · The Diner Cafe</title><meta name="description" content="Contact The Diner Cafe in Colombo 03.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="top"><div class="wrap bar"><a class="logo" href="index.html"><img src="images/logo.png" alt="The Diner Cafe"></a>
+<button class="burger" aria-controls="nav" aria-expanded="false">Menu</button>
+<nav id="nav" aria-label="Main"><a href="index.html">Home</a><a href="About%20us.html">About us</a><a href="Our%20service.html">Our services</a><a href="Gallery.html">Gallery</a><a href="Contact%20Us.html" aria-current=page>Contact us</a><a class="signin" href="Login.html">Sign in</a></nav></div></header>
+<main><div class="phead"><div class="wrap"><h1>Contact us</h1><p class="lead">Send a message, call, or drop in. We’ll reply to the email you give us.</p></div></div>
+<section style="padding-top:56px"><div class="wrap formgrid">
+<div class="info panel"><dl><dt>Address</dt><dd>Liberty Arcade, No. 282,<br>R A De Mel Mawatha,<br>Colombo 03</dd><dt>Telephone</dt><dd>+94 114716171<br>+94 1125770978</dd><dt>Fax</dt><dd>+94 114621130</dd><dt>Email</dt><dd><a href="mailto:thedinercafe@gmail.com">thedinercafe@gmail.com</a></dd></dl></div>
+<div class="panel"><form data-kind="contact" action="PHP/insert_data.php" method="post" novalidate><h2 style="font-size:1.7rem">Send us a message</h2>
+<p class="mute" style="margin-bottom:22px">Fields marked * are required. Your email stays private.</p>
+<div class="two"><div class="field"><label for="txt_firstname">First name <em>*</em></label><input id="txt_firstname" name="txt_firstname" type="text" placeholder="Nimal" data-msg="Enter your first name." required maxlength="50" autocomplete="given-name"><span class="err" role="alert"></span></div>
+<div class="field"><label for="txt_lname">Last name <em>*</em></label><input id="txt_lname" name="txt_lname" type="text" placeholder="Perera" data-msg="Enter your last name." required maxlength="100" autocomplete="family-name"><span class="err" role="alert"></span></div></div>
+<div class="field"><label for="txt_email">Email <em>*</em></label><input id="txt_email" name="txt_email" type="email" placeholder="you@example.com" data-msg="Enter a valid email address so we can reply." required maxlength="50" autocomplete="email"><span class="err" role="alert"></span></div>
+<div class="field"><label for="txt_message">Message <em>*</em></label><textarea id="txt_message" name="txt_message" maxlength="500" placeholder="Tell us how we can help" data-msg="Write a short message." required></textarea><span class="hint"><span class="err" role="alert"></span><span id="count"></span></span></div>
+<div class="actions"><button class="btn" type="submit">Send message</button><button class="btn ghost" type="reset" style="color:var(--ink)">Clear</button></div>
+<div class="status" role="status"></div></form>
+<div class="done" hidden><h2>Message sent</h2><p>Thank you. We’ll reply to your email soon.</p></div></div></div>
+<div class="wrap"><iframe class="map" title="Map of The Diner Cafe" loading="lazy" src="https://www.google.com/maps?q=Liberty+Arcade+R+A+De+Mel+Mawatha+Colombo+03&amp;output=embed"></iframe></div></section></main>
+<div class="check" aria-hidden="true"></div>
+<footer><div class="wrap"><div class="fgrid">
+<div><img class="fl" src="images/logo.png" alt="The Diner Cafe"><p>Authentic Sri Lankan dining in Colombo, since 1994.</p></div>
+<div><h3>Find us</h3><p>Liberty Arcade, No. 282,<br>R A De Mel Mawatha,<br>Colombo 03<br><br>Restaurant: +94 114716171 / +94 1125770978<br>Fax: +94 114621130<br><a href="mailto:thedinercafe@gmail.com">thedinercafe@gmail.com</a></p></div>
+<div><h3>Follow us</h3><div class="soc"><a href="#" aria-label="Facebook"><img src="images/facebook.png" alt=""></a><a href="#" aria-label="Instagram"><img src="images/instagram.png" alt=""></a><a href="#" aria-label="Twitter"><img src="images/twitter.png" alt=""></a></div></div>
+</div><p class="copy">© 2026 The Diner Cafe. All rights reserved.</p></div></footer>
+<script src="js/main.js"></script></body></html>
